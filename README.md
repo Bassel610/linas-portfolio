@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# Lina's Interior Design Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Responsive portfolio website for an interior designer — built with React, Vite, and Material-UI. Features project galleries, contact forms, smooth animations, and SEO optimization.
 
-Currently, two official plugins are available:
+**Live demo:** https://linas-portfolio.netlify.app
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
 
-## Expanding the ESLint configuration
+- React 18 + Vite
+- Material-UI (MUI 6)
+- React Router 7
+- Swiper for carousels
+- ColorThief / fast-average-color for image color extraction
+- react-lazy-load-image-component for performance
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm install
+npm run dev      # local development
+npm run build    # production build
+npm run preview  # preview build locally
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## License
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+MIT — see [LICENSE](./LICENSE).
