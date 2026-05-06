@@ -4,6 +4,7 @@
 
 **A responsive portfolio website for an interior designer — modern UI, smooth animations, and SEO-ready**
 
+[![CI](https://github.com/Bassel610/linas-portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/Bassel610/linas-portfolio/actions/workflows/ci.yml)
 [![React](https://img.shields.io/badge/React-18.3-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Material UI](https://img.shields.io/badge/Material--UI-6.4-007FFF?logo=mui&logoColor=white)](https://mui.com/)
