@@ -4,10 +4,9 @@ import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 import './index.css';
 import App from './App';
-import theme from './theme/theme';
+import theme from './theme';
 
 const rootElement = document.getElementById('root');
-
 if (rootElement) {
   createRoot(rootElement).render(
     <StrictMode>
@@ -15,6 +14,6 @@ if (rootElement) {
         <CssBaseline />
         <App />
       </ThemeProvider>
-    </StrictMode>
+    </StrictMode>,
   );
 }
